@@ -4,79 +4,13 @@
 <meta charset="UTF-8">
 <title>Karinderya Menu</title>
 
-<style>
-    body {
-        font-family: "Segoe UI", sans-serif;
-        background: #f4f6f8;
-        margin: 0;
-        padding: 30px;
-    }
+<h1>🔥 Popular Menu</h1>
 
-    h1 {
-        text-align: center;
-        margin: 40px 0 20px;
-    }
+<input type="search" id="searchInput" placeholder="Search in menu…" aria-label="Search menu" />
 
-    .menu-container {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 20px;
-        margin-bottom: 40px;
-    }
+<div class="tabs" id="categoryTabs"></div>
 
-    .menu-card {
-        background: #ffffff;
-        border-radius: 15px;
-        overflow: hidden;
-        box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-        transition: transform 0.2s;
-    }
-
-    .menu-card:hover {
-        transform: translateY(-5px);
-    }
-
-    .menu-card img {
-        width: 100%;
-        height: 150px;
-        object-fit: cover;
-    }
-
-    .menu-info {
-        padding: 15px;
-        text-align: center;
-    }
-
-    .menu-info h3 {
-        margin: 10px 0 5px;
-    }
-
-    .price {
-        color: #27ae60;
-        font-weight: bold;
-        font-size: 18px;
-    }
-
-    /* Tablet */
-    @media (max-width: 1024px) {
-        .menu-container {
-            grid-template-columns: repeat(2, 1fr);
-        }
-    }
-
-    /* Mobile */
-    @media (max-width: 600px) {
-        .menu-container {
-            grid-template-columns: repeat(1, 1fr);
-        }
-    }
-</style>
-</head>
-
-<body>
-
-<h1>🍴 Common Dishes</h1>
 <div class="menu-container" id="menuList"></div>
 
-<h1>🥩 Prito / Gisa</h1>
-<div class="menu-container" id="pritoList"></div>
+</head>
+<body>
