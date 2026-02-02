@@ -59,5 +59,5 @@ function renderCart() {
     `).join('');
 
     const currentTotal = cart.reduce((sum, item) => sum + item.price, 0);
-    totalEl.innerText = '₱${currentTotal.toFixed(2)}';
+    totalEl.innerText = `₱${currentTotal.toFixed(2)}`;
 }
